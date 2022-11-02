@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut01</title>
+</head>
+<body>
+       
+
+    <button onclick="bulbon()">bulbon</button>
+    <img src="/js image/off.jpg" alt="" height="200px" width="200px" id="myimg">
+    <button onclick="bulboff()">bulboff</button>
+    <button onclick="hidebtn()">hide</button>
+    <button onclick="showme()">showme</button>
+
+
+
+
+    <script>
+        function bulbon() {
+            document.getElementById('myimg').src = "/js image/on.jpg"
+        }
+
+        function bulboff() {
+            document.getElementById('myimg').src = "/js image/off.jpg"
+        }
+        function hidebtn() {
+            document.getElementById('myimg').style.display = 'none'
+        } 
+        function showme() {
+            document.getElementById('myimg').style.display = "block"
+        }
+
+
+
+    </script>
+</body>
+</html>
